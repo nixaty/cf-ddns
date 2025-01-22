@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копировать код
 COPY . /ddns
 
-CMD ["python", "main.py", "-t", "$TOKEN", "-z", "$ZONE", "-r", "$RECORDS"]
+CMD ["python", "main.py", "-t", $TOKEN, "-z", $ZONE, "-r", $RECORDS]
